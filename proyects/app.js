@@ -6,6 +6,7 @@ let li = document.createElement("li");
 const contador = 10;
 let padre = document.getElementById("padre");
 let mostrar = padre;
+let mySpan = document.getElementById('mySpan');
     
 
 function addElement() {
@@ -22,6 +23,7 @@ function addElement() {
 
     mostrar.innerHTML += `<span id="mySpan" class="mySpan">${myInput.value}</span>`;
     myInput.value = "";
+    myInput.focus();
     
     if (mostrar.childElementCount >= contador) {
       // alert(`Limite de Tareas Superadas ${contador}`);
