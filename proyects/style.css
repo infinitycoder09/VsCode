@@ -49,23 +49,31 @@ input{
 }
 
 input{
-    margin: 0 5px;
+    margin: 0 11px;
     text-align: center;
     border-radius: 12px;
     padding: 5px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+input:hover{
+    transform: scale(1.05);
+    margin: 0 12px;
+    border: 2px solid #FF7F50;
 }
 
 .myFirsButton {
     padding: 12px;
     border: none;
     border-radius: 20px;
-    background-color: #2C3E50;
+    /* background-color: #2C3E50; */
+    background-color: #E732FF;
     box-shadow: 5px 5px 5px #000;
     color: white;
 }
 
 .myFirsButton:hover{
-    background-color: #FF7F50;
+    background-color: #2C3E50;
     transform: scale(1.2);
     margin: 0 5px;
 }
@@ -88,6 +96,7 @@ li{
 }
 
 .error{
+    text-align: center;
     font-size: 1.3rem;
     color: red;
 
@@ -97,7 +106,7 @@ li{
     background-color: #2C3E50;
     box-shadow: 5px 5px 10px #000;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 90%;
     height: 10%;
@@ -107,3 +116,40 @@ li{
     overflow: hidden;
     overflow-wrap: wrap;
 }
+
+#article{
+    color: red;
+    margin: 0 2px;
+    border-radius: 12px;
+    padding: 2%;
+    border: none;
+}
+
+#article:hover{
+    background-color: #FF7F50;
+}
+
+#h1br{
+    color: red;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.removeButton{
+    background-color: #E732FF;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+}
+
+.hError {
+    color: red;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* style other page error */
+
