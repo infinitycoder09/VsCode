@@ -6,8 +6,7 @@ let id = 0;
 let padre = document.getElementById("padre");
 let mostrar = padre;
 let mySpan = document.getElementById('mySpan');
-let removeButton = document.getElementById('removeButton');
-let createButton = document.createElement('button');
+
 
 
 
@@ -25,7 +24,6 @@ function addElement() {
       mostrar.innerHTML += `
       <div id="btn${id} btnAll"
         <span class="mySpan">${myInput.value}</span>
-        <button id="removeButton" class="removeButton">Eliminar</button>
       </div>`;
     }
     // mostrar.innerHTML += `<span onclick="removeButton()" id="mySpan" class="mySpan">${myInput.value}</span>`;
@@ -44,7 +42,7 @@ function addElement() {
 myButton.addEventListener("click", function (event) {
   event.preventDefault();
   console.log(myInput.value);
-  console.log(removeButton);
+  
   
   
 });
